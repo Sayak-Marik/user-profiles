@@ -1,22 +1,12 @@
-// App.js
 import { useState } from "react";
 import "./App.css";
+import UserCard from "./components/UserCard";
 
 const users = [
   { id: 1, name: "Alice", role: "Frontend Developer", location: "Delhi" },
   { id: 2, name: "Bob", role: "Backend Developer", location: "Mumbai" },
   { id: 3, name: "Carol", role: "Full Stack Developer", location: "Remote" }
 ];
-
-function UserCard({ user }) {
-  return (
-    <div className="user-card">
-      <div className="profile-pic"> 👤 </div> <h3> {user.name} </h3>{" "}
-      <p> {user.role} </p> <p className="location"> {user.location} </p>{" "}
-      <button className="contact-btn"> Contact </button>{" "}
-    </div>
-  );
-}
 
 function App() {
   const [searchValue, setSearchaValue] = useState("");
