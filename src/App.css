@@ -1,0 +1,96 @@
+/* App.css */
+
+.app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.search-bar {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+  
+.search-bar input:focus {
+outline: none;
+border-color: #007bff;
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+.users-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.user-card {
+    background: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* subtle depth */
+    transition: transform 0.2s ease;
+}
+
+.user-card:hover {
+transform: translateY(-4px); /* slight lift on hover */
+}
+
+.profile-pic {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.location {
+    color: #666;
+    font-style: italic;
+}
+
+.contact-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-btn:hover {
+    background: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.no-users {
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+    margin: 40px 0;
+}
+@media (max-width: 600px) {
+    .user-card {
+      width: 100%;
+    }
+  
+    .search-bar input {
+        width: 90%;
+    }
+}
+  
